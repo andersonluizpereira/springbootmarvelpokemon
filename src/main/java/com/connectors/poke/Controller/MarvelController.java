@@ -1,6 +1,7 @@
 package com.connectors.poke.Controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
@@ -20,6 +21,8 @@ import java.util.Date;
 public class MarvelController {
 
     private RestTemplate restTemplate;
+    @Value("${server.urlmarvel}")
+    private static String server_url;
 
     @RequestMapping("/marvel")
     public String hello() {
