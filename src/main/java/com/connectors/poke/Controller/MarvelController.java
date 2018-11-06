@@ -10,11 +10,8 @@ import org.springframework.web.client.RestTemplate;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.security.Timestamp;
 import java.time.Instant;
 import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 
 @Slf4j
 @RestController
